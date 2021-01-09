@@ -31,10 +31,10 @@ export default function App() {
             name="Authentication" 
             component={AuthenticationNavigator}
           />
-          {/* <AppStack.Screen 
+          <AppStack.Screen 
             name="Home" 
             component={HomeNavigator}
-          /> */}
+          />
         </AppStack.Navigator>
         </SafeAreaProvider>
       </LoadAssets>

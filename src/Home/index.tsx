@@ -19,10 +19,10 @@ export const HomeNavigator = () => (
       width: DRAWER_WIDTH
     }}
   >
-    <Drawer.Screen name="OutfitIdeas" component={OutfitIdeas} />
+    {/* <Drawer.Screen name="OutfitIdeas" component={OutfitIdeas} /> */}
     <Drawer.Screen name="FavoriteOutfits" component={FavoriteOutfits} />
-    <Drawer.Screen name="TransactionHistory" component={TransactionHistory} />
-    <Drawer.Screen name="EditProfile" component={EditProfile} />
+    {/* <Drawer.Screen name="TransactionHistory" component={TransactionHistory} /> */}
+    {/* <Drawer.Screen name="EditProfile" component={EditProfile} /> */}
     <Drawer.Screen name="Settings" component={Settings} />
     <Drawer.Screen name="Cart" component={Cart} />
   </Drawer.Navigator>
