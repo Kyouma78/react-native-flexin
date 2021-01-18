@@ -69,7 +69,7 @@ const Graph = ({ data, startDate, numberOfMonths }: GraphProps) => {
             bottom={0}
             width={step}
             height={lerp(0, height, point.value / maxY)}
-            style={{ transform: [ { translateY }, {scaleY: transition }] }}
+            // style={{ transform: [ { translateY }, {scaleY: transition } ] }}
           >
             <Box
               backgroundColor={point.color}

@@ -2,9 +2,7 @@ import React from 'react'
 import { Dimensions, ImageRequireSource, StyleSheet } from 'react-native'
 import { PanGestureHandler } from 'react-native-gesture-handler'
 import Animated, { Extrapolate, interpolate, useAnimatedGestureHandler, useAnimatedStyle, useDerivedValue, useSharedValue, withSpring } from 'react-native-reanimated'
-import { snapPoint } from 'react-native-redash'
-import { mix, mixColor } from 'react-native-redash/lib/module/v1'
-
+import { snapPoint, mix, mixColor } from 'react-native-redash'
 
 import { Box } from '../../components'
 
@@ -27,7 +25,9 @@ const Card = ({ onSwipe, source, step, index, aIndex }: CardProps) => {
   const translateX = useSharedValue(0)
   const translateY = useSharedValue(0)
   const position = useDerivedValue(() => index * step - aIndex.value)
-  const onGestureEvent = useAnimatedGestureHandler<{ x: number; y: number; }>({
+  const onGestureEvent = useAnimatedGestureHandler<
+    { x: number; y: number; }
+  >({
     onStart: (_, ctx) => {
       ctx.x = translateX.value
       ctx.y = translateY.value
@@ -37,10 +37,10 @@ const Card = ({ onSwipe, source, step, index, aIndex }: CardProps) => {
       translateY.value = translationY + ctx.y
     },
     onEnd: ({ velocityX, velocityY }) => {
-      translateX.value = withSpring(0, {
+      translateY.value = withSpring(0, {
         velocity: velocityX,
       })
-      const dest = snapPoint(translateY.value, velocityX, snapPoints)
+      const dest = snapPoint(translateX.value, velocityY, snapPoints)
       translateX.value = withSpring(
         dest, {
           overshootClamping: dest === 0 ? false : true,

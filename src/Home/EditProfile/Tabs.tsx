@@ -2,8 +2,7 @@ import React, { Children, ReactNode, useState } from 'react'
 import { Dimensions } from 'react-native'
 import { RectButton } from 'react-native-gesture-handler'
 import Animated, { useAnimatedStyle } from 'react-native-reanimated'
-import { useTiming } from 'react-native-redash'
-import { mix } from 'react-native-redash/lib/module/v1'
+import { mix, useTiming } from 'react-native-redash'
 
 import { Box, Text, useTheme } from '../../components'
 

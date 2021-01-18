@@ -41,6 +41,7 @@ const OutfitIdeas = ({ navigation }: HomeNavigationProps<"OutfitIdeas">) => {
       <Categories />
       <Box flex={1}>
         <Background />
+        {/* This is the code that make crash navigation */}
         {cards.map(
           ({ index, source }) => 
           currentIndex < index * step + step && (
