@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import { Dimensions, View } from 'react-native'
-import { PanGestureHandler, PanGestureHandlerGestureEvent } from 'react-native-gesture-handler'
+import { PanGestureHandler } from 'react-native-gesture-handler'
 import Animated, { useAnimatedGestureHandler, useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated'
 import { clamp, snapPoint } from 'react-native-redash'
 import { Box, useTheme } from '../../components'

@@ -23,6 +23,7 @@ const theme = {
     secondary: "#0C0D34",
     danger: "#FF0058",
     info: "#808080",
+    edit: palette.lightBlue,
     text: "rgba(12, 13, 52, 0.7)",
     textContrast: palette.white,
     background: palette.white,

@@ -18,6 +18,7 @@
     "expo": "^39.0.1",
     "expo-app-loading": "^1.0.1",
     "expo-asset": "^8.2.1",
+    "expo-linear-gradient": "^8.4.0",
     "expo-status-bar": "^1.0.3",
     "formik": "^2.2.6",
     "intl": "^1.2.5",
